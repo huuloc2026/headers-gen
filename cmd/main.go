@@ -12,10 +12,10 @@ func generateHeader(title string, lang string) string {
 
 	// Clean and convert the title to uppercase
 	title = strings.TrimSpace(title)
-	title = strings.ToUpper(title) // Convert title to uppercase
+	title = strings.ToUpper(title)
 
 	// Calculate padding to center the title
-	totalPadding := lineWidth - len(title) - 2 // subtract 2 for the characters on both ends
+	totalPadding := lineWidth - len(title) - 2
 	leftPadding := totalPadding / 2
 	rightPadding := totalPadding - leftPadding
 	leftPadStr := strings.Repeat(" ", leftPadding)
