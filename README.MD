@@ -25,15 +25,15 @@ hdgen -<language> "<header-title>"
 Replace <language> with one of the supported programming languages and provide a title for the header.
 Supported Languages
 
-- go - for Go language
+- `go` - for Go language
 
-- java - for Java language
+- `java` - for Java language
 
-- python - for Python language
+- `python` - for Python language
 
-- rust - for Rust language
+- `rust` - for Rust language
 
-- ts - for TypeScript language
+- `ts` - for TypeScript language
 
 
 # Examples:
