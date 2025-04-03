@@ -8,7 +8,7 @@
 
 ```sh
 git clone https://github.com/huuloc2026/headers-gen.git
-cd hdgen
+cd headers-gen
 go build -o hdgen ./cmd
 ```
 This will generate the hdgen executable in your current directory.
