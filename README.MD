@@ -60,7 +60,7 @@ hdgen -java "JAKE ONYX"
 //*                        JAKE ONYX                         *
 //************************************************************
 ```
-## - Python:
+## Python:
 
 ```
 hdgen -python "JAKE ONYX"
@@ -72,7 +72,7 @@ hdgen -python "JAKE ONYX"
 #############################################################
 ```
 
-## -  Rust:
+## Rust:
 ```
 hdgen -rust "JAKE ONYX"
 ```
@@ -82,7 +82,7 @@ hdgen -rust "JAKE ONYX"
 //*                        JAKE ONYX                         *
 //************************************************************
 ```
-## - TypeScript:
+## TypeScript:
 ```
 hdgen -ts "JAKE ONYX"
 ```
