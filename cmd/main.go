@@ -57,7 +57,7 @@ func main() {
 	// Get the title from command arguments
 	if flag.NArg() < 1 {
 		fmt.Println("Please provide a title for the header")
-		fmt.Println("Example: hd-gen -go \"Variable Declaration\"")
+		fmt.Println("Example: hdgen -go \"Variable Declaration\"")
 		return
 	}
 

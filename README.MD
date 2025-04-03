@@ -8,19 +8,19 @@
 
 ```sh
 git clone https://github.com/huuloc2026/headers-gen.git
-cd hd-gen
+cd hdgen
 go build -o hdgen ./cmd
 ```
 This will generate the hdgen executable in your current directory.
 
 ## 🔧 Usage
 
-After successfully installing the hd-gen package, you can use it to generate structured headers for different programming languages.
+After successfully installing the hdgen package, you can use it to generate structured headers for different programming languages.
 Basic Command Structure
 
-To use hd-gen, use the following structure:
+To use hdgen, use the following structure:
 ```
-hd-gen -<language> "<header-title>"
+hdgen -<language> "<header-title>"
 ```
 Replace <language> with one of the supported programming languages and provide a title for the header.
 Supported Languages
@@ -41,7 +41,7 @@ Supported Languages
 ## Go:
 
 ```
-hd-gen -go "Variable Declaration"
+hdgen -go "Variable Declaration"
 ```
 - Output:
 ```
@@ -52,7 +52,7 @@ hd-gen -go "Variable Declaration"
 
 ## Java:
 ```
-hd-gen -java "JAKE ONYX"
+hdgen -java "JAKE ONYX"
 ```
 - Output:
 ```
@@ -63,7 +63,7 @@ hd-gen -java "JAKE ONYX"
 ## - Python:
 
 ```
-hd-gen -python "JAKE ONYX"
+hdgen -python "JAKE ONYX"
 ```
 - Output:
 ```
@@ -74,7 +74,7 @@ hd-gen -python "JAKE ONYX"
 
 ## -  Rust:
 ```
-hd-gen -rust "JAKE ONYX"
+hdgen -rust "JAKE ONYX"
 ```
 - Output:
 ```
@@ -84,7 +84,7 @@ hd-gen -rust "JAKE ONYX"
 ```
 ## - TypeScript:
 ```
-hd-gen -ts "JAKE ONYX"
+hdgen -ts "JAKE ONYX"
 ```
 - Output:
 ```
