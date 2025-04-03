@@ -1,4 +1,4 @@
-# hdgen - Code Header Generator
+# hdgen - Comment Block Header Generator
 
 `hdgen` is a command-line tool that generates structured headers for source code files in multiple programming languages, including Go, Java, Python, Rust, and TypeScript.
 
