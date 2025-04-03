@@ -1,8 +1,19 @@
 # hdgen - Comment Header Generator
 
 `hdgen` is a command-line tool that generates structured headers for source code files in multiple programming languages, including Go, Java, Python, Rust, and TypeScript.
-# Notes:
-If you want to use this CLI globally:
+
+
+## 🚀 Installation
+
+### 1️⃣ Install from source
+
+```sh
+git clone https://github.com/huuloc2026/headers-gen.git
+cd headers-gen
+go build -o hdgen ./cmd
+```
+This will generate the hdgen executable in your current directory.
+#### Notes: If you want to use this CLI globally:
 ## For Windows:
 - Move hdgen.exe to the system directory:
 ```sh
@@ -17,18 +28,6 @@ sudo mv hdgen /usr/local/bin/
 ```sh
 hdgen -go "Have a good day"
 ```
-
-## 🚀 Installation
-
-### 1️⃣ Install from source
-
-```sh
-git clone https://github.com/huuloc2026/headers-gen.git
-cd headers-gen
-go build -o hdgen ./cmd
-```
-This will generate the hdgen executable in your current directory.
-
 ## 🔧 Usage
 
 After successfully installing the hdgen package, you can use it to generate structured headers for different programming languages.
