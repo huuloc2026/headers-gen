@@ -20,7 +20,7 @@ Basic Command Structure
 
 To use hd-gen, use the following structure:
 ```
-hd-gen -<language> "<header-title>"
+hdgen -<language> "<header-title>"
 ```
 Replace <language> with one of the supported programming languages and provide a title for the header.
 Supported Languages
