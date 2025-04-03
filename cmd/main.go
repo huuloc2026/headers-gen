@@ -7,15 +7,15 @@ import (
 )
 
 func generateHeader(title string, lang string) string {
-	// Tính độ dài tối đa của header
+	// Maximum line width for the header
 	const lineWidth = 60
 
-	// Chuẩn hóa title và chuyển sang chữ in hoa
+	// Clean and convert the title to uppercase
 	title = strings.TrimSpace(title)
-	title = strings.ToUpper(title) // Chuyển title sang chữ in hoa
+	title = strings.ToUpper(title) // Convert title to uppercase
 
-	// Tính padding để title căn giữa
-	totalPadding := lineWidth - len(title) - 2 // trừ đi 2 cho ký tự ở hai đầu
+	// Calculate padding to center the title
+	totalPadding := lineWidth - len(title) - 2 // subtract 2 for the characters on both ends
 	leftPadding := totalPadding / 2
 	rightPadding := totalPadding - leftPadding
 	leftPadStr := strings.Repeat(" ", leftPadding)
@@ -27,7 +27,7 @@ func generateHeader(title string, lang string) string {
 		rightPadStr = ""
 	}
 
-	// Xây dựng header theo ngôn ngữ
+	// Build the header based on the language
 	var header strings.Builder
 	switch lang {
 	case "go", "java", "rust", "ts":
@@ -46,7 +46,7 @@ func generateHeader(title string, lang string) string {
 }
 
 func main() {
-	// Định nghĩa flags cho các ngôn ngữ
+	// Define flags for different languages
 	goFlag := flag.Bool("go", false, "Generate header for Go")
 	javaFlag := flag.Bool("java", false, "Generate header for Java")
 	pythonFlag := flag.Bool("python", false, "Generate header for Python")
@@ -54,16 +54,16 @@ func main() {
 	typescriptFlag := flag.Bool("ts", false, "Generate header for TypeScript")
 	flag.Parse()
 
-	// Lấy title từ arguments
+	// Get the title from command arguments
 	if flag.NArg() < 1 {
-		fmt.Println("Vui lòng cung cấp tiêu đề cho header")
-		fmt.Println("Ví dụ: hdgen -go \"Variable Declaration\"")
+		fmt.Println("Please provide a title for the header")
+		fmt.Println("Example: hd-gen -go \"Variable Declaration\"")
 		return
 	}
 
 	title := strings.Join(flag.Args(), " ")
 
-	// Kiểm tra và tạo header dựa trên flag được chọn
+	// Check the selected flag and generate the corresponding header
 	switch {
 	case *goFlag:
 		result := generateHeader(title, "go")
@@ -81,7 +81,7 @@ func main() {
 		result := generateHeader(title, "ts")
 		fmt.Println(result)
 	default:
-		fmt.Println("Vui lòng chỉ định ngôn ngữ:")
+		fmt.Println("Please specify a language:")
 		fmt.Println("  -go: for Go")
 		fmt.Println("  -java: for Java")
 		fmt.Println("  -python: for Python")
